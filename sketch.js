@@ -4,7 +4,7 @@ var speed, weight;
 function setup() {
   createCanvas(1600,400);
   
-  speed = random(55, 90);
+  speed = random(50, 100);
   weight = random(400, 1500);
 
   wall = createSprite(1500, 200, 60, 800);
@@ -28,21 +28,21 @@ function draw() {
       textSize(24);
       stroke(0, 255, 0);
       fill(0, 255, 0);
-      text("No Damage !! :)", 790, 200);
+      text("No Damage !! :)", 750, 200);
     }
     if (deformation > 100 && deformation < 180) {
       car.shapeColor = color(230, 230, 0);
       textSize(24);
       stroke(230, 230, 0);
       fill(255, 0, 0);
-      text("Moderate Damage ! :|", 790, 200);
+      text("Moderate Damage ! :|", 750, 200);
     }
     if (deformation > 180) {
       car.shapeColor = color(255, 0, 0);
       textSize(24);
       stroke(255, 0, 0);
       fill(255, 0, 0);
-      text("Severe Damage ! ! ! ! ! :(", 790, 200);
+      text("Severe Damage ! ! ! ! ! :(", 750, 200);
     }
   }
 
